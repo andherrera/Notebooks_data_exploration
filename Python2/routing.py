@@ -4,8 +4,3 @@ from django.urls import path
 from alarmsPage import consumer
 
 
-application= ProtocolTypeRouter(
-    {
-        'websocket':AuthMiddlewareStack(URLRouter(ws_pattern))
-    }
-)
